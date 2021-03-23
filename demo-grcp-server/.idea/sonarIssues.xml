@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="$MAVEN_REPOSITORY$/demo/grcp/interface/grcp-interface-service/1.0-SNAPSHOT/grcp-interface-service-1.0-SNAPSHOT.jar!/demo/grcp/server/HelloResponse.class">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$MAVEN_REPOSITORY$/demo/grcp/interface/grcp-interface-service/1.0-SNAPSHOT/grcp-interface-service-1.0-SNAPSHOT.jar!/demo/grcp/server/HelloServiceGrpc.class">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../demo-grcp-client/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../demo-grcp-client/src/main/java/demo/grcp/client/DemoClientService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../demo-grcp-client/src/main/java/demo/grcp/client/FoobarService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../demo-grcp-client/src/main/java/demo/grcp/client/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../demo-grcp-client/src/main/java/demo/grcp/client/RestEndpoint.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../demo-grcp-client/src/main/java/demo/grcp/client/RestEndpointConfiguration.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../demo-grcp-client/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../demo-grcp-interface/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../demo-grcp-interface/src/main/proto/HelloService.proto">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../demo-grcp-interface/src/main/proto/HelloService2.proto">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/demo/grcp/server/HelloServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/demo/grcp/server/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/demo/grcp/server/MyServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/demo/grcp/server/config/GrcpConfiguration.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/demo/grcp/server/error/DemoException.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/demo/grcp/server/error/GrpcExceptionAdvice.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/demo/grcp/server/service/HelloServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
