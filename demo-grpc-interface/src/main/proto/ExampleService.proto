@@ -1,0 +1,22 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package demo.grpc.reactive.server.proto;
+
+option java_package = "demo.grpc.reactive.server.proto";
+option java_outer_classname = "ExampleProto";
+
+import "validation.proto";
+
+message ExampleRequest {
+  repeated string ids = 1[(validation.repeatMin) = 0];
+}
+
+message ExampleResponse {
+  string id = 1;
+  string value = 2;
+
+}
+
+service ExampleService {
+  rpc handle(ExampleRequest) returns (stream ExampleResponse);
+}

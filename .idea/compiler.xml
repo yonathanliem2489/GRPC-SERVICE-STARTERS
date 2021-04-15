@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo-grpc-interface" />
+        <module name="demo-grpc-server" />
+        <module name="demo-grpc-interface (1)" />
+        <module name="model-service" />
+        <module name="server-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo-grpc-interface" target="11" />
+      <module name="demo-grpc-interface (1)" target="11" />
+      <module name="demo-grpc-server" target="11" />
+      <module name="grpc-server-service" target="11" />
+      <module name="grpc-service" target="11" />
+      <module name="grpc-starter" target="11" />
+      <module name="model-service" target="11" />
+      <module name="server-service" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo-grpc-interface" options="-parameters" />
+      <module name="demo-grpc-interface (1)" options="-parameters" />
+      <module name="demo-grpc-server" options="-parameters" />
+      <module name="grpc-server-service" options="-parameters" />
+      <module name="grpc-service" options="-parameters" />
+      <module name="model-service" options="-parameters" />
+      <module name="server-service" options="-parameters" />
+    </option>
+  </component>
+</project>

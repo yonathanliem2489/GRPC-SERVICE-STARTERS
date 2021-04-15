@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo-grpc-interface/demo-grpc-interface.iml" filepath="$PROJECT_DIR$/demo-grpc-interface/demo-grpc-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-grpc-client/demo-grpc-interface (1).iml" filepath="$PROJECT_DIR$/demo-grpc-client/demo-grpc-interface (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-grpc-server/demo-grpc-server.iml" filepath="$PROJECT_DIR$/demo-grpc-server/demo-grpc-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc-service.iml" filepath="$PROJECT_DIR$/grpc-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc-starter/grpc-starter.iml" filepath="$PROJECT_DIR$/grpc-starter/grpc-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc-starter/model-service/model-service.iml" filepath="$PROJECT_DIR$/grpc-starter/model-service/model-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc-starter/server-service/server-service.iml" filepath="$PROJECT_DIR$/grpc-starter/server-service/server-service.iml" />
+    </modules>
+  </component>
+</project>

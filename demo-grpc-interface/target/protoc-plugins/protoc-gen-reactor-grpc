@@ -1,0 +1,8 @@
+#!/bin/sh
+
+CP="/Users/tiket/.m2/repository/com/salesforce/servicelibs/reactor-grpc/1.0.0/reactor-grpc-1.0.0.jar"
+ARGS=""
+JVMARGS=""
+
+"/Users/tiket/.sdkman/candidates/java/11.0.8.hs-adpt/bin/java" $JVMARGS -cp $CP com.salesforce.reactorgrpc.ReactorGrpcGenerator $ARGS
+
