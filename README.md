@@ -276,6 +276,31 @@ public class DefaultDemoClientService implements DemoClientService {
 }
 ```
 
+Setup client configuration
+```java
+@Configuration
+public class ClientConfiguration {
+
+  @Bean
+  DemoClientService demoClientService(ManagedChannel demoChannel) {
+    ReactorExampleServiceGrpc.ReactorExampleServiceStub stub =
+        ReactorExampleServiceGrpc.newReactorStub(demoChannel);
+    return new DefaultDemoClientService(stub);
+  }
+
+  @Bean
+  ManagedChannel demoChannel() {
+    ManagedChannel channel = ManagedChannelBuilder
+        .forAddress("localhost", 9099)
+        .usePlaintext()
+        .idleTimeout(3, TimeUnit.SECONDS)
+        .keepAliveTimeout(5, TimeUnit.SECONDS)
+        .build();
+    return channel;
+  }
+}
+```
+
 Add scheduler for live test grpc
 
 ```java

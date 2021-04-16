@@ -18,6 +18,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/demo-grpc-client/src/main/java/demo/grpc/reactive/ClientConfiguration.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/demo-grpc-client/src/main/java/demo/grpc/reactive/ClientServiceApplication.java">
           <value>
             <set />
