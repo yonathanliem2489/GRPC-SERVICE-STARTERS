@@ -7,6 +7,11 @@ This libraries for simplify configuration grpc
 ### Requirement
 1. Spring boot 2.3.x with reactor
 
+### Compile grpc starter
+
+1. Open module grpc-starter  
+2. `mvn clean install` in java 11
+
 ### Configuring GRPC Interface
 
 ```xml
@@ -127,7 +132,7 @@ service ExampleService {
 Execute maven command 
 
 ```
-maven clean install
+mvn clean install
 ```
 
 
@@ -176,33 +181,19 @@ Put grpc service dependency
 Put annotation `@EnableGRPC` in main class application, for example
 
 ```java
-
-import com.tiket.tix.train.libs.grpc.server.annotation.EnableGRPC;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 @EnableGRPC
 @SpringBootApplication
-public class MainApplication {
+public class ServerServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MainApplication.class, args);
+		SpringApplication.run(ServerServiceApplication.class, args);
 	}
 }
+
 ```
 
 Implement grpc service 
 ```java
-package demo.reactive.service;
-
-import com.tiket.tix.train.libs.grpc.server.annotation.GRPCService;
-import demo.grpc.reactive.server.proto.ExampleRequest;
-import demo.grpc.reactive.server.proto.ExampleResponse;
-import demo.grpc.reactive.server.proto.ReactorExampleServiceGrpc;
-import lombok.extern.slf4j.Slf4j;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
-
 @Slf4j
 @GRPCService
 public class ExampleService extends ReactorExampleServiceGrpc.ExampleServiceImplBase {
@@ -232,9 +223,81 @@ public class DemoReactiveServiceConfiguration {
 
 Setup Properties
 ```properties
-train.libs.grpc.server.port=9099
+simultan.team.libs.grpc.server.port=9099
 ```
 
-#### Run service
+Run demo grpc server service 
+
+### Configuring GRPC Client
+
+Setup dependency
+
+```xml
+<dependency>
+    <groupId>simultan.team.grpc.libs</groupId>
+    <artifactId>model-service</artifactId>
+    <version>1.0.0-0-SNAPSHOT</version>
+</dependency>
+<dependency>
+    <groupId>simultan.team.grpc</groupId>
+    <artifactId>demo-grpc-interface</artifactId>
+    <version>1.0.0-0-SNAPSHOT</version>
+</dependency>
+```
+
+Setup client service class implement
+
+```java
+@Slf4j
+public class DefaultDemoClientService implements DemoClientService {
+
+  private final ReactorExampleServiceStub stub;
+
+  public DefaultDemoClientService(ReactorExampleServiceStub stub) {
+    this.stub = stub;
+  }
+
+  @Override
+  public Mono<List<String>> handle(List<String> ids) {
+
+    Flux<ExampleResponse> flux = stub.handle(toMessage(ids));
+
+    return flux.doOnNext(response -> log.info("receive response id {}", response.getId()))
+        .map(ExampleResponse::getId)
+        .collectList()
+        .doOnError(throwable -> log.error("problem occurred {}", throwable.getMessage()));
+  }
+
+  private Mono<ExampleRequest> toMessage(List<String> ids) {
+    return Mono.just(ExampleRequest.newBuilder()
+        .addAllIds(ids)
+        .build());
+  }
+}
+```
+
+Add scheduler for live test grpc
+
+```java
+@EnableScheduling
+@SpringBootApplication
+public class ClientServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ClientServiceApplication.class, args);
+	}
+
+	@Autowired
+	private DemoClientService service;
+
+	@Scheduled(fixedDelay = 10000)
+	public void scheduleFixedDelayTask() {
+
+		service.handle(Arrays.asList("1", "2")).block();
+	}
+}
+```
+
+Run demo grpc client
 
 ENJOY!!!

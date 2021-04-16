@@ -3,6 +3,11 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/README.md">
           <value>
             <set />
@@ -43,12 +48,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/demo-grpc-server/src/main/java/demo/reactive/ServerServiceApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/demo-grpc-server/src/main/java/demo/reactive/config/DemoReactiveServiceConfiguration.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/demo-grpc-server/src/main/java/demo/reactive/service/ExampleService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/demo-grpc-server/src/main/resources/application.properties">
           <value>
             <set />
           </value>
@@ -63,12 +78,37 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/grpc-starter/model-service/src/main/java/com/tiket/tix/train/libs/grpc/model/validation/support/MinValidator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/grpc-starter/model-service/src/main/java/simultan/team/libs/grpc/model/validation/support/MinValidator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/grpc-starter/pom.xml">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/grpc-starter/server-service/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/grpc-starter/server-service/src/main/java/simultan/team/libs/grpc/server/config/GRPCConfiguration.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/grpc-starter/server-service/src/main/java/simultan/team/libs/grpc/server/config/GRPCServerProperties.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/grpc-starter/server-service/src/main/java/simultan/team/libs/grpc/server/interceptor/GRPCInterceptorProperties.java">
           <value>
             <set />
           </value>

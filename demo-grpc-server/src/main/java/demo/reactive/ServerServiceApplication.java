@@ -1,6 +1,6 @@
 package demo.reactive;
 
-import com.tiket.tix.train.libs.grpc.server.annotation.EnableGRPC;
+import simultan.team.libs.grpc.server.annotation.EnableGRPC;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

@@ -1,6 +1,6 @@
 package demo.reactive.service;
 
-import com.tiket.tix.train.libs.grpc.server.annotation.GRPCService;
+import simultan.team.libs.grpc.server.annotation.GRPCService;
 import demo.grpc.reactive.server.proto.ExampleRequest;
 import demo.grpc.reactive.server.proto.ExampleResponse;
 import demo.grpc.reactive.server.proto.ReactorExampleServiceGrpc;

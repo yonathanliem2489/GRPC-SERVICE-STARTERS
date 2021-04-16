@@ -1,6 +1,6 @@
 package demo.reactive.config;
 
-import com.tiket.tix.train.libs.grpc.server.config.GRPCConfiguration;
+import simultan.team.libs.grpc.server.config.GRPCConfiguration;
 import demo.reactive.service.ExampleService;
 import io.grpc.BindableService;
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;
