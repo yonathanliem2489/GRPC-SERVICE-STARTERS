@@ -23,6 +23,31 @@
     <module>demo-grpc-interface</module>
   </modules>
 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>simultan.team.grpc</groupId>
+        <artifactId>grpc-starter</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>simultan.team.grpc</groupId>
+        <artifactId>demo-grpc-server</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>simultan.team.grpc</groupId>
+        <artifactId>demo-grpc-client</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>simultan.team.grpc</groupId>
+        <artifactId>demo-grpc-interface</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -33,5 +58,23 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-webflux</artifactId>
     </dependency>
+
+<!--    <dependency>-->
+<!--      <groupId>simultan.team.grpc</groupId>-->
+<!--      <artifactId>grpc-starter</artifactId>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>simultan.team.grpc</groupId>-->
+<!--      <artifactId>demo-grpc-server</artifactId>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>simultan.team.grpc</groupId>-->
+<!--      <artifactId>demo-grpc-client</artifactId>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>simultan.team.grpc</groupId>-->
+<!--      <artifactId>demo-grpc-interface</artifactId>-->
+<!--    </dependency>-->
+
   </dependencies>
 </project>

@@ -28,7 +28,7 @@
    <dependency>
      <groupId>simultan.team.grpc.libs</groupId>
      <artifactId>model-service</artifactId>
-     <version>1.0.0-0-SNAPSHOT</version>
+     <version>${project.version}</version>
    </dependency>
 
    <dependency>
