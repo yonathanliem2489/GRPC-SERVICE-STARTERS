@@ -1,0 +1,7 @@
+server:
+  port: 4100
+
+demo:
+  grpc:
+    reactive:
+      server-port: 9099

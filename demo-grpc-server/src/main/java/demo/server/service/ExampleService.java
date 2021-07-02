@@ -1,4 +1,4 @@
-package demo.reactive.service;
+package demo.server.service;
 
 import simultan.team.libs.grpc.server.annotation.GRPCService;
 import demo.grpc.reactive.server.proto.ExampleRequest;

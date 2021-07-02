@@ -11,6 +11,10 @@
 
   <artifactId>demo-grpc-server</artifactId>
 
+  <properties>
+    <grpcmock-junit5.version>0.5.4</grpcmock-junit5.version>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.projectlombok</groupId>
@@ -30,6 +34,30 @@
       <artifactId>server-service</artifactId>
       <version>${project.version}</version>
     </dependency>
+
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>org.junit.vintage</groupId>
+          <artifactId>junit-vintage-engine</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.projectreactor</groupId>
+      <artifactId>reactor-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.grpcmock</groupId>
+      <artifactId>grpcmock-junit5</artifactId>
+      <version>${grpcmock-junit5.version}</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -38,7 +66,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
         <configuration>
-          <mainClass>demo.reactive.ServerServiceApplication</mainClass>
+          <mainClass>demo.server.ServerServiceApplication</mainClass>
         </configuration>
         <executions>
           <execution>

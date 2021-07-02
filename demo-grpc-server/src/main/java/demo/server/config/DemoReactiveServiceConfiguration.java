@@ -1,7 +1,7 @@
-package demo.reactive.config;
+package demo.server.config;
 
 import simultan.team.libs.grpc.server.config.GRPCConfiguration;
-import demo.reactive.service.ExampleService;
+import demo.server.service.ExampleService;
 import io.grpc.BindableService;
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;
 import org.springframework.context.annotation.Bean;

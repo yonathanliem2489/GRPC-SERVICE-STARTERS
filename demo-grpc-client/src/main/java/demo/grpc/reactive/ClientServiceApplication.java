@@ -18,10 +18,4 @@ public class ClientServiceApplication {
 
 	@Autowired
 	private DemoClientService service;
-
-	@Scheduled(fixedDelay = 10000)
-	public void scheduleFixedDelayTask() {
-
-		service.handle(Arrays.asList("1", "2")).block();
-	}
 }

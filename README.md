@@ -9,7 +9,7 @@ This libraries for simplify configuration grpc
 
 ### Compile grpc starter
 
-1. Open module grpc-starter  
+1. Open project grpc-starter  
 2. `mvn clean install` in java 11
 
 ### Configuring GRPC Interface
@@ -301,27 +301,6 @@ public class ClientConfiguration {
 }
 ```
 
-Add scheduler for live test grpc
-
-```java
-@EnableScheduling
-@SpringBootApplication
-public class ClientServiceApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(ClientServiceApplication.class, args);
-	}
-
-	@Autowired
-	private DemoClientService service;
-
-	@Scheduled(fixedDelay = 10000)
-	public void scheduleFixedDelayTask() {
-
-		service.handle(Arrays.asList("1", "2")).block();
-	}
-}
-```
 
 Run demo grpc client
 

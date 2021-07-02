@@ -1,4 +1,4 @@
-package demo.reactive;
+package demo.server;
 
 import simultan.team.libs.grpc.server.annotation.EnableGRPC;
 import org.springframework.boot.SpringApplication;
