@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.3.9.RELEASE</version>
+  </parent>
+
+  <scm>
+    <connection>${git.scm.connection}</connection>
+    <developerConnection>${git.scm.developer-connection}</developerConnection>
+    <url>${git.scm.url}</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <groupId>simultan.team.grpc</groupId>
+  <artifactId>grpc-service</artifactId>
+  <version>1.0.0-0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <distributionManagement>
+    <repository>
+      <id>jfrog-central</id>
+      <name>a0ea4camm4ocr-artifactory-primary-0-releases</name>
+      <url>https://simultan.jfrog.io/artifactory/default-maven-virtual</url>
+    </repository>
+    <snapshotRepository>
+      <id>jfrog-snapshots</id>
+      <name>a0ea4camm4ocr-artifactory-primary-0-snapshots</name>
+      <url>https://simultan.jfrog.io/artifactory/default-maven-virtual</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+
+  <properties>
+    <java.version>11</java.version>
+    <git.scm.connection>scm:git:git@github.com:yonathanliem2489/GRPC-SERVICE-STARTERS.git</git.scm.connection>
+    <git.scm.developer-connection>scm:git:git@github.com:yonathanliem2489/GRPC-SERVICE-STARTERS.git</git.scm.developer-connection>
+    <git.scm.url>https://github.com/yonathanliem2489/GRPC-SERVICE-STARTERS.git</git.scm.url>
+    <project.scm.id>yonathanliem2489-scm-server</project.scm.id>
+  </properties>
+
+  <modules>
+    <module>grpc-starter</module>
+    <module>demo-grpc-server</module>
+    <module>demo-grpc-client</module>
+    <module>demo-grpc-interface</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>simultan.team.grpc</groupId>
+        <artifactId>grpc-starter</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>simultan.team.grpc</groupId>
+        <artifactId>demo-grpc-server</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>simultan.team.grpc</groupId>
+        <artifactId>demo-grpc-client</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>simultan.team.grpc</groupId>
+        <artifactId>demo-grpc-interface</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-webflux</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.5.3</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
