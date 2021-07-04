@@ -3,17 +3,17 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>simultan.team.grpc.libs</groupId>
-    <artifactId>grpc-starter</artifactId>
+    <artifactId>grpc-service-libs</artifactId>
     <version>1.0.0-2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>server-service</artifactId>
+  <artifactId>server-service-libs</artifactId>
 
 
   <dependencies>
     <dependency>
       <groupId>simultan.team.grpc.libs</groupId>
-      <artifactId>model-service</artifactId>
+      <artifactId>model-service-libs</artifactId>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>

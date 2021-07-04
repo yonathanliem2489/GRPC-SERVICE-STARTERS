@@ -9,6 +9,11 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/demo-grcp-server/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-grpc-client/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-grpc-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-grpc-server/pom.xml" />
+        <option value="$PROJECT_DIR$/grpc-starter/model-service/pom.xml" />
+        <option value="$PROJECT_DIR$/grpc-starter/pom.xml" />
       </set>
     </option>
   </component>
