@@ -38,7 +38,7 @@
     <git.scm.connection>scm:git:git@github.com:yonathanliem2489/GRPC-SERVICE-STARTERS.git</git.scm.connection>
     <git.scm.developer-connection>scm:git:git@github.com:yonathanliem2489/GRPC-SERVICE-STARTERS.git</git.scm.developer-connection>
     <git.scm.url>https://github.com/yonathanliem2489/GRPC-SERVICE-STARTERS.git</git.scm.url>
-<!--    <project.scm.id>yonathanliem2489-scm-server</project.scm.id>-->
+    <project.scm.id>yonathanliem2489-scm-server</project.scm.id>
   </properties>
 
   <modules>
