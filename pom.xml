@@ -11,12 +11,12 @@
     <connection>${git.scm.connection}</connection>
     <developerConnection>${git.scm.developer-connection}</developerConnection>
     <url>${git.scm.url}</url>
-    <tag>HEAD</tag>
+    <tag>grpc-service-libs-1.0.0-2</tag>
   </scm>
 
   <groupId>simultan.team.grpc.libs</groupId>
   <artifactId>grpc-service-libs</artifactId>
-  <version>1.0.0-2-SNAPSHOT</version>
+  <version>1.0.0-2</version>
   <packaging>pom</packaging>
 
   <distributionManagement>
