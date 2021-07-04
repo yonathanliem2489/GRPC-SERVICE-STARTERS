@@ -20,7 +20,7 @@ This libraries for simplify configuration grpc
     <dependency>
       <groupId>simultan.team.grpc.libs</groupId>
       <artifactId>grpc-starter</artifactId>
-      <version>1.0.0-0-SNAPSHOT</version>
+      <version>1.0.0-1-SNAPSHOT</version>
     </dependency>
   </dependencies>
 </dependencyManagement>    
@@ -45,7 +45,7 @@ Put grpc model dependency
    <dependency>
      <groupId>simultan.team.grpc.libs</groupId>
      <artifactId>model-service</artifactId>
-     <version>1.0.0-0-SNAPSHOT</version>
+     <version>1.0.0-1-SNAPSHOT</version>
    </dependency>
 
    <dependency>
@@ -146,7 +146,7 @@ Add this starter library to your project.
     <dependency>
       <groupId>simultan.team.grpc.libs</groupId>
       <artifactId>grpc-starter</artifactId>
-      <version>1.0.0-0-SNAPSHOT</version>
+      <version>1.0.0-1-SNAPSHOT</version>
     </dependency>
   </dependencies>
 </dependencyManagement>    
@@ -160,7 +160,7 @@ Put grpc service dependency
   <dependency>
     <groupId>simultan.team.grpc</groupId>
     <artifactId>demo-grpc-interface</artifactId>
-    <version>1.0.0-0-SNAPSHOT</version>
+    <version>1.0.0-1-SNAPSHOT</version>
     <scope>compile</scope>
   </dependency>
 
@@ -173,7 +173,7 @@ Put grpc service dependency
   <dependency>
     <groupId>simultan.team.grpc.libs</groupId>
     <artifactId>server-service</artifactId>
-    <version>1.0.0-0-SNAPSHOT</version>
+    <version>1.0.0-1-SNAPSHOT</version>
   </dependency>
 </dependencies>
 ```
@@ -236,12 +236,12 @@ Setup dependency
 <dependency>
     <groupId>simultan.team.grpc.libs</groupId>
     <artifactId>model-service</artifactId>
-    <version>1.0.0-0-SNAPSHOT</version>
+    <version>1.0.0-1-SNAPSHOT</version>
 </dependency>
 <dependency>
     <groupId>simultan.team.grpc</groupId>
     <artifactId>demo-grpc-interface</artifactId>
-    <version>1.0.0-0-SNAPSHOT</version>
+    <version>1.0.0-1-SNAPSHOT</version>
 </dependency>
 ```
 

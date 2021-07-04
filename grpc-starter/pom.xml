@@ -4,12 +4,12 @@
   <parent>
     <groupId>simultan.team.grpc</groupId>
     <artifactId>grpc-service</artifactId>
-    <version>1.0.0-0-SNAPSHOT</version>
+    <version>1.0.0-1-SNAPSHOT</version>
   </parent>
 
   <groupId>simultan.team.grpc.libs</groupId>
   <artifactId>grpc-starter</artifactId>
-  <version>1.0.0-0-SNAPSHOT</version>
+  <version>1.0.0-1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>grpc-starter</name>
   <description>GRPC Starter</description>
