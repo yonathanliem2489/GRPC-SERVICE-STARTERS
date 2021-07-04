@@ -25,12 +25,12 @@
     </snapshotRepository>
   </distributionManagement>
 
-  <scm>
-    <connection>${git.scm.connection}</connection>
-    <developerConnection>${git.scm.developer-connection}</developerConnection>
-    <url>${git.scm.url}</url>
-    <tag>HEAD</tag>
-  </scm>
+<!--  <scm>-->
+<!--    <connection>${git.scm.connection}</connection>-->
+<!--    <developerConnection>${git.scm.developer-connection}</developerConnection>-->
+<!--    <url>${git.scm.url}</url>-->
+<!--    <tag>HEAD</tag>-->
+<!--  </scm>-->
 
   <properties>
     <java.version>11</java.version>
