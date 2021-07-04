@@ -1,12 +1,10 @@
-package demo.grpc.reactive;
+package demo.grpc;
 
 import demo.grpc.reactive.service.DemoClientService;
-import java.util.Arrays;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
-import org.springframework.scheduling.annotation.Scheduled;
 
 @EnableScheduling
 @SpringBootApplication

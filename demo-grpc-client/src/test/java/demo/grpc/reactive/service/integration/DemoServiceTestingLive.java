@@ -1,6 +1,6 @@
 package demo.grpc.reactive.service.integration;
 
-import demo.grpc.reactive.ClientServiceApplication;
+import demo.grpc.ClientServiceApplication;
 import demo.grpc.reactive.TestingConfiguration;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;

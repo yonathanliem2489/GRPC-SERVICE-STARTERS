@@ -12,8 +12,31 @@
   <version>1.0.0-0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
+  <distributionManagement>
+    <repository>
+      <id>jfrog-central</id>
+      <name>a0ea4camm4ocr-artifactory-primary-0-releases</name>
+      <url>https://simultan.jfrog.io/artifactory/default-maven-virtual</url>
+    </repository>
+    <snapshotRepository>
+      <id>jfrog-snapshots</id>
+      <name>a0ea4camm4ocr-artifactory-primary-0-snapshots</name>
+      <url>https://simultan.jfrog.io/artifactory/default-maven-virtual</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <scm>
+    <connection>${git.scm.connection}</connection>
+    <developerConnection>${git.scm.developer-connection}</developerConnection>
+    <url>${git.scm.url}</url>
+    <tag>HEAD</tag>
+  </scm>
+
   <properties>
     <java.version>11</java.version>
+    <git.scm.connection>scm:git:git@github.com:yonathanliem2489/GRPC-SERVICE-STARTERS.git</git.scm.connection>
+    <git.scm.developer-connection>scm:git:git@github.com:yonathanliem2489/GRPC-SERVICE-STARTERS.git</git.scm.developer-connection>
+    <git.scm.url>https://github.com/yonathanliem2489/GRPC-SERVICE-STARTERS.git</git.scm.url>
   </properties>
 
   <modules>
@@ -59,22 +82,6 @@
       <artifactId>spring-boot-starter-webflux</artifactId>
     </dependency>
 
-<!--    <dependency>-->
-<!--      <groupId>simultan.team.grpc</groupId>-->
-<!--      <artifactId>grpc-starter</artifactId>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>simultan.team.grpc</groupId>-->
-<!--      <artifactId>demo-grpc-server</artifactId>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>simultan.team.grpc</groupId>-->
-<!--      <artifactId>demo-grpc-client</artifactId>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>simultan.team.grpc</groupId>-->
-<!--      <artifactId>demo-grpc-interface</artifactId>-->
-<!--    </dependency>-->
 
   </dependencies>
 </project>
