@@ -3,16 +3,17 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>simultan.team.grpc.libs</groupId>
-    <artifactId>grpc-starter</artifactId>
+    <artifactId>grpc-service-libs</artifactId>
     <version>1.0.0-2-SNAPSHOT</version>
   </parent>
 
-  <artifactId>model-service</artifactId>
+  <artifactId>model-service-libs</artifactId>
 
   <properties>
     <protobuf.version>3.14.0</protobuf.version>
     <protobuf-plugin.version>0.6.1</protobuf-plugin.version>
     <kr-motd.version>1.6.2</kr-motd.version>
+    <grpc-all.version>1.35.0</grpc-all.version>
   </properties>
 
   <dependencies>
@@ -24,6 +25,10 @@
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>io.grpc</groupId>
+      <artifactId>grpc-all</artifactId>
     </dependency>
   </dependencies>
 
@@ -45,7 +50,7 @@
         <configuration>
           <protocArtifact>com.google.protobuf:protoc:${protobuf.version}:exe:${os.detected.classifier}</protocArtifact>
           <pluginId>grpc-java</pluginId>
-          <pluginArtifact>io.grpc:protoc-gen-grpc-java:${grpc.version}:exe:${os.detected.classifier}</pluginArtifact>
+          <pluginArtifact>io.grpc:protoc-gen-grpc-java:${grpc-all.version}:exe:${os.detected.classifier}</pluginArtifact>
           <clearOutputDirectory>false</clearOutputDirectory>
         </configuration>
         <executions>

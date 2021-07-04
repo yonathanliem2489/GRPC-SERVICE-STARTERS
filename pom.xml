@@ -14,8 +14,8 @@
     <tag>HEAD</tag>
   </scm>
 
-  <groupId>simultan.team.grpc</groupId>
-  <artifactId>grpc-service</artifactId>
+  <groupId>simultan.team.grpc.libs</groupId>
+  <artifactId>grpc-service-libs</artifactId>
   <version>1.0.0-2-SNAPSHOT</version>
   <packaging>pom</packaging>
 
@@ -38,36 +38,30 @@
     <git.scm.connection>scm:git:https://github.com/yonathanliem2489/GRPC-SERVICE-STARTERS.git</git.scm.connection>
     <git.scm.developer-connection>scm:git:https://github.com/yonathanliem2489/GRPC-SERVICE-STARTERS.git</git.scm.developer-connection>
     <git.scm.url>https://github.com/yonathanliem2489/GRPC-SERVICE-STARTERS.git</git.scm.url>
+    <grpc-all.version>1.35.0</grpc-all.version>
   </properties>
 
   <modules>
-    <module>grpc-starter</module>
-    <module>demo-grpc-server</module>
-    <module>demo-grpc-client</module>
-    <module>demo-grpc-interface</module>
+    <module>model-service</module>
+    <module>server-service</module>
   </modules>
 
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>simultan.team.grpc</groupId>
-        <artifactId>grpc-starter</artifactId>
+        <groupId>simultan.team.grpc.libs</groupId>
+        <artifactId>server-service-libs</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>simultan.team.grpc</groupId>
-        <artifactId>demo-grpc-server</artifactId>
+        <groupId>simultan.team.grpc.libs</groupId>
+        <artifactId>model-service-libs</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>simultan.team.grpc</groupId>
-        <artifactId>demo-grpc-client</artifactId>
-        <version>${project.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>simultan.team.grpc</groupId>
-        <artifactId>demo-grpc-interface</artifactId>
-        <version>${project.version}</version>
+        <groupId>io.grpc</groupId>
+        <artifactId>grpc-all</artifactId>
+        <version>${grpc-all.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
